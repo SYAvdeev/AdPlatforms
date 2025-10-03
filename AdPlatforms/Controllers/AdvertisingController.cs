@@ -6,6 +6,8 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace AdPlatforms.Controllers;
 
+[ApiController]
+[Route("api/v1/")]
 public class AdvertisingController(IAdvertisingService _advertisingService, IMapper _mapper) : Controller
 {
     /// <summary>
